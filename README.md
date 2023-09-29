@@ -1,4 +1,4 @@
-# MoneyTrack
+# MoneyTrack App
 Money Tracking App
 
 # Design
