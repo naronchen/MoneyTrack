@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "moneytrackapp-6c7a9": {
+      "hosting": {
+        "MoneyTrackApp": [
+          "moneytrackapp-6c7a9"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "moneytrackapp-6c7a9"
+  }
+}
