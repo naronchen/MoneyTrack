@@ -1,8 +1,9 @@
 <p>login works!</p>
 
-<button *ngIf="!(afAuth.authState | async)" mat-raised-button appGoogleSignin>
-    <img src="/assets/google-logo.svg" alt=""> Login with Google
-</button>
+<div *ngIf="!(afAuth.authState | async)">
+    Logged Out!
+</div>
+
 
 <!-- <div *ngIf="!(afAuth.authState | async)"> This is showing when not logged in</div> -->
 
@@ -10,8 +11,5 @@
     <div>
         {{user.email}} logged in!
     </div>
-    <button mat-raised-button (click)="logOut()">
-        Logout
-    </button>
 
 </div>

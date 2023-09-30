@@ -1,0 +1,9 @@
+<div class="navbar">
+    <div class="routes-container">
+        <a routerLink="/dashboard">Dashboard</a>
+        <a routerLink="/transactions">Transactions</a>
+        <a *ngIf="!(afAuth.authState | async)" routerLink="/login" appGoogleSignin>Log In</a>
+        <a *ngIf="(afAuth.authState | async)" routerLink="/login" appLogout>Log Out</a>
+
+    </div>
+</div>

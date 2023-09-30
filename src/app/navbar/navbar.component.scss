@@ -1,0 +1,26 @@
+.navbar {
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #BADAE5;
+  }
+.routes-container{
+    margin-top: 100px;
+}
+.navbar a {
+margin-right: 15px;
+margin-top: 40px;
+display: block;
+padding: 15px;
+color: black;
+text-decoration: none;
+background-color: #F4F4F4; /* Fill with color */
+box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Add drop shadow */
+}
+.navbar a:hover {
+background-color: #b7acac;
+box-shadow: 0 4px 12px rgba(99, 96, 96, 0.2); /* Add a slightly more intense shadow on hover */
+}
+  
