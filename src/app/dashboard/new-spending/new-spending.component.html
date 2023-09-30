@@ -1,12 +1,13 @@
 
   <div class="new-spending-box">
     <h2 class="title">New Spending</h2>
+    <form [formGroup]="spendingForm!" (ngSubmit)="onSubmit()">
+        <div class="input-row">
+            <input type="text" placeholder="Transaction Reason" formControlName="reason" class="input-long">
+            <input type="number" placeholder="Amount" formControlName="amount" class="input-short">
+          </div>
     <div class="input-row">
-      <input type="text" placeholder="Transaction Reason" class="input-long">
-      <input type="number" placeholder="Amount" class="input-short">
-    </div>
-    <div class="input-row">
-      <select class="input-long">
+      <select formControlName="tag" class="input-long">
         <option value="" disabled selected> Tag</option>
         <option value="food">Food</option>
         <option value="coffee">Coffee</option>
@@ -15,10 +16,11 @@
         <option value="subscription">Subscription</option>
         <option value="others">Others</option>
       </select>
-      <input type="date" class="input-short">
+      <input type="date" formControlName="date" class="input-short" >
     </div>
     <div class="add-button-container">
-        <button class="add-button">Add</button>
+        <button class="add-button" type="submit">Add</button>
       </div>
+    </form>
   </div>
   
