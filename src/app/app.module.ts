@@ -12,6 +12,7 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { environment } from 'src/environments/environment';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SharedModule } from './shared.module';
+import { DashboardModule } from './dashboard/dashboard.module';
 
 
 
@@ -27,7 +28,8 @@ import { SharedModule } from './shared.module';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireAuthModule,
-    SharedModule
+    SharedModule,
+    DashboardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
