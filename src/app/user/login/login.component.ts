@@ -15,21 +15,13 @@ export class LoginComponent {
     
     this.authSubscription = this.afAuth.authState.subscribe(user => {
       if (user) {
-        console.log('User is logged in', user);
-        console.log('authState 1', afAuth.authState)
+        console.log('User is logged in');
       } else {
         console.log('User is not logged in');
       }
     });
   }
 
-  logOut(){
-    this.afAuth.signOut().then(()=>{
-      console.log("user just signed out!")
-      console.log('authState 2', this.afAuth.authState)
-
-    })
-  }
   ngOnDestroy() {
     // Unsubscribe when the component is destroyed
     this.authSubscription.unsubscribe();
