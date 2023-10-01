@@ -5,7 +5,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
-  { path: 'login', loadChildren: () => import('./user/user.module').then(m => m.UserModule)}
+  { path: 'login', loadChildren: () => import('./user.module').then(m => m.UserModule)}
 ];
 
 @NgModule({
