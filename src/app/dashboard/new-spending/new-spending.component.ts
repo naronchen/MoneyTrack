@@ -40,11 +40,19 @@ export class NewSpendingComponent {
   }
 
   onSubmit(){
+    const uid = this.spendingForm?.get('uid')?.value;
+    const todayDate = formatDate(new Date(), 'yyyy-MM-dd', 'en');
 
     this.db.collection('spending').add(this.spendingForm?.value).then(() => {
       console.log('Form Value:', this.spendingForm?.value); 
       console.log('Spending Added to Database')
       this.spendingForm?.reset();
+      
+      this.spendingForm?.patchValue({
+        uid: uid,
+        date: todayDate,
+      });
+      
     })
   }
 

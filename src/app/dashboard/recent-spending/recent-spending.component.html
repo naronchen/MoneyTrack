@@ -1,0 +1,9 @@
+<div class="recent-spending-box">
+  <h2 class="title">Recent Spendings</h2>
+  <ul>
+    <li *ngFor="let spending of recentSpendings" class="spending-item">
+      <span class="left">{{ spending.date | date:'MM-dd' }} | {{ spending.reason }}</span>
+      <span class="right">${{ spending.amount }}</span>
+    </li>
+  </ul>
+</div>
