@@ -26,7 +26,9 @@ export class RecentSpendingComponent {
     //   }
     // });
     this.spendingService.spendings$.subscribe(data => {
-      this.recentSpendings = data;
+      this.recentSpendings = data.sort((a, b) => 
+        b.date.localeCompare(a.date) || b.priorityIndex - a.priorityIndex
+      );
     });
   }
 }
