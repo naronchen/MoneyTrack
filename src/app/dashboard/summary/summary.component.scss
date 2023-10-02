@@ -1,0 +1,29 @@
+.summary-box {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 12px;
+    padding: 16px;
+    height: 280px;
+  }
+  
+  .summary-item {
+    text-align: center;
+  }
+  
+  h4 {
+    margin-bottom: 0.5rem;
+  }
+  
+  hr {
+    width: 30%;
+    margin: 0 auto;
+    border: 1px solid black;
+  }
+  
+  .amount {
+    padding-top: 10px;
+    height: 1.5rem; /* you can adjust as needed */
+  }
+  

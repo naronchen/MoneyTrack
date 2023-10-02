@@ -4,6 +4,7 @@ import { NewSpendingComponent } from './new-spending/new-spending.component';
 import { DashboardComponent } from './dashboard.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RecentSpendingComponent } from './recent-spending/recent-spending.component';
+import { SummaryComponent } from './summary/summary.component';
 
 
 
@@ -11,7 +12,8 @@ import { RecentSpendingComponent } from './recent-spending/recent-spending.compo
   declarations: [
     DashboardComponent,
     NewSpendingComponent,
-    RecentSpendingComponent
+    RecentSpendingComponent,
+    SummaryComponent
   ],
   imports: [
     CommonModule,
