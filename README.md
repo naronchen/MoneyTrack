@@ -2,6 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.2.
 
+# Demo
+<img src='https://i.imgur.com/jmzXTqy.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
 # Design
 [Figma Link](https://www.figma.com/file/itDE4Aq6il2X8pDHtJXxIx/Money-Tracking?type=design&node-id=0%3A1&mode=design&t=uQU9rNFYd67RBJbu-1)
 
