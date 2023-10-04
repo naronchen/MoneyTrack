@@ -1,18 +1,24 @@
 <div class="summary-box">
     <div class="summary-item">
-      <h4>Budget for today</h4>
+      <h4>Budget Left for today</h4>
       <hr>
-      <div class="amount">20</div>
+      <div class="amount">
+        {{ (weekBudget - weekTotal) / 7 - todayTotal | number: '1.2-2' }} USD
+      </div>
     </div>
     <div class="summary-item">
       <h4>Week Total Spending</h4>
       <hr>
-      <div class="amount"></div>
+      <div class="amount">
+        {{weekTotal}} USD
+      </div>
     </div>
     <div class="summary-item">
       <h4>Month Total Spending</h4>
       <hr>
-      <div class="amount"></div>
+      <div class="amount">
+        {{monthTotal}} USD
+      </div>
     </div>
   </div>
   
