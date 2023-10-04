@@ -9,12 +9,9 @@
     <div class="input-row">
       <select formControlName="tag" class="input-long">
         <option value="" disabled selected> Tag</option>
-        <option value="food">Food</option>
-        <option value="coffee">Coffee</option>
-        <option value="transportation">Transportation</option>
-        <option value="rent">Rent</option>
-        <option value="subscription">Subscription</option>
-        <option value="others">Others</option>
+        <option *ngFor="let tag of tags" [value]="tag">
+          {{ tagService.capitalizeFirstLetter(tag) }}
+        </option>
       </select>
       <input type="date" formControlName="date" class="input-short" >
     </div>

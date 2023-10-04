@@ -1,17 +1,16 @@
+.dashboard {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
 
-  .dashboard {
-    margin-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .app-new-spending, .app-summary {
-    flex: 1;
-    margin-right: 20px; /* Add some spacing */
-  }
-  
-  .app-recent-spending {
-    flex-basis: 100%; /* Take the full width */
-    margin-top: 20px; /* Add some spacing */
-  }
-  
+.app-new-spending, .app-summary {
+  flex: 1;
+  margin-top: 20px;
+}
+
+.app-recent-spending, .app-graph {
+  flex-basis: 50%; /* This will ensure they take up 50% of the container's width each. */
+  margin-top: 20px;
+}
+

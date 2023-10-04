@@ -5,6 +5,7 @@ import { formatDate } from '@angular/common';
 import { Subscription } from 'rxjs';  // Import Subscription from RxJS
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import firebase from 'firebase/compat/app';
+import { TagService } from 'src/app/services/tag-service.service';
 
 
 
@@ -19,8 +20,9 @@ export class NewSpendingComponent {
   private uidSubscription?: Subscription;  // Keep track of the subscription
   private authSubscription: Subscription;
 
+  tags: string[] = [];
 
-  constructor(private fb: FormBuilder, private db: AngularFirestore, private afAuth: AngularFireAuth){
+  constructor(private fb: FormBuilder, private db: AngularFirestore, private afAuth: AngularFireAuth, public tagService: TagService){
 
     const todayDate = formatDate(new Date(), 'yyyy-MM-dd', 'en');
     this.spendingForm = this.fb.group({
@@ -38,6 +40,10 @@ export class NewSpendingComponent {
       }
     });
 
+  }
+
+  ngOnInit(){
+    this.tags = this.tagService.getTags();
   }
 
   onSubmit(){

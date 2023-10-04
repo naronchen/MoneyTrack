@@ -11,8 +11,12 @@ import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 
 import { environment } from 'src/environments/environment';
 import { NavbarComponent } from './navbar/navbar.component';
-import { SharedModule } from './shared.module';
+import { SharedModule } from './shared/shared.module';
 import { DashboardModule } from './dashboard/dashboard.module';
+import { BudgetComponent } from './budget/budget.component';
+import { TransactionsComponent } from './transactions/transactions.component';
+
+// import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts';
 
 
 
@@ -21,6 +25,8 @@ import { DashboardModule } from './dashboard/dashboard.module';
   declarations: [
     AppComponent,
     NavbarComponent,
+    BudgetComponent,
+    TransactionsComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,6 +36,8 @@ import { DashboardModule } from './dashboard/dashboard.module';
     AngularFireAuthModule,
     SharedModule,
     DashboardModule
+    // CanvasJSAngularChartsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

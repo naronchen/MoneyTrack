@@ -3,7 +3,6 @@
     width: 500px; 
     border-radius: 12px;
     padding: 16px;
-    margin-top: 30px;
   }
   
   .spending-item {
@@ -14,6 +13,8 @@
     padding: 10px;            // Add some padding for breathing space
     margin-bottom: 10px;      // Add some margin for separation between items
     font-weight: 50;
+    max-width: 500px;  /* Fixed width */
+
   }
   
   .title{

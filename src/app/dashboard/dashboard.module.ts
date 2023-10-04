@@ -5,6 +5,12 @@ import { DashboardComponent } from './dashboard.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RecentSpendingComponent } from './recent-spending/recent-spending.component';
 import { SummaryComponent } from './summary/summary.component';
+import { GraphComponent } from './graph/graph.component';
+
+// import { CanvasJSAngularChartsModule } from '@canvasjs/angular-charts';
+import { NgApexchartsModule } from 'ng-apexcharts';
+
+
 
 
 
@@ -13,11 +19,14 @@ import { SummaryComponent } from './summary/summary.component';
     DashboardComponent,
     NewSpendingComponent,
     RecentSpendingComponent,
-    SummaryComponent
+    SummaryComponent,
+    GraphComponent
   ],
   imports: [
     CommonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgApexchartsModule
+
   ]
 })
 export class DashboardModule { }
